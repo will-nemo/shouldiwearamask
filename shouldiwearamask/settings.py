@@ -30,7 +30,7 @@ ALLOWED_HOSTS = [
     'localhost', 
     'shouldiwearamask-production.herokuapp.com',
     'shouldiwearamask.site',
-    '*',
+    'www.shouldiwearamask.site',
     ]
 
 
