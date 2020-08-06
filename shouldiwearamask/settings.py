@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     'shouldiwearamask-production.herokuapp.com',
     'shouldiwearamask.site',
     'www.shouldiwearamask.site',
+    '127.0.0.1',
     ]
 
 
@@ -134,6 +135,8 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = '/home/username/projects/site/assets/'
+# Use in local dev ^^^
 
 SECURE_SSL_REDIRECT = True
 
