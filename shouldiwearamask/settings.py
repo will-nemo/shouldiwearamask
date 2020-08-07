@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     'shouldiwearamask.site',
     'www.shouldiwearamask.site',
     '127.0.0.1',
+    '*.herokuapp.com',
     ]
 
 
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'google_analytics',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +145,8 @@ SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 
 CSRF_COOKIE_SECURE = True
+
+# Google Analytics
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': 'UA-168707108-1',
+}
