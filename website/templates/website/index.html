@@ -13,6 +13,10 @@
     <title>Should I Wear a Mask?</title>
   </head>
   <body class={{background_color}}>
+    {% load google_analytics_tags %}
+    <div style="display:none">
+        <img src="{% google_analytics %}" width="0" height="0" />
+    </div>
     <div class="app-body">
       {% if should_wear_mask == 'YES' %}
         <p class="bad-state-copy" style="margin-block-start: 0.5em; margin-block-end: 0;">Should I wear a mask?</p>
