@@ -109,7 +109,7 @@ def build_tested_chart(positive, negative):
     return tested_fig
 
 def index(request):
-    url = "https://covidtracking.com/api/states"
+    url = "https://api.covidtracking.com/v1/states/info.json"
     response = requests.get(url)
     json = response.json()
     total_positive = "N/A"
